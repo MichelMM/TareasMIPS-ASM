@@ -21,4 +21,4 @@ multiplica:
 andBitwise:
 	and $s4,$s1,$s2 #c = a & b;
 	j exit
-exit: #En el caso del c骴igo en C creamos una variable nueva c cada que entra en un funci髇, pero debido a que al saltar a una funci髇 en el ISA no se pierde el valor del dato podemos cargar automaticamente el valor requerido, en el caso del c骴igo en C podr韆mos inicializar c como una variable global para evirtar declararla al entrar en cada funci髇
+exit: #En el caso del c贸digo en C creamos una variable nueva c cada que entra en un funci贸n, pero debido a que al saltar a una funci贸n en el ISA no se pierde el valor del dato podemos cargar automaticamente el valor requerido, en el caso del c贸digo en C podr铆amos inicializar c como una variable global para evirtar declararla al entrar en cada funci贸n
