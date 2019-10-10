@@ -6,7 +6,7 @@ auxiliar:	.space 32	#reserve space in MIPS memory for auxiliar placement of disc
 destination:	.space 32	#reserve space in MIPS memory for destination placement of hanoi tower discs.
 .text
 main:	
-addi $s0,$zero,8 	#Declare the variable who cointains the number of discs on original hanoi tower (maximum of 8) in this case $s0 
+addi $s0,$zero,3 	#Declare the variable who cointains the number of discs on original hanoi tower (maximum of 8) in this case $s0 
 addi $t0,$zero,1	#Register with value of one to make a comparion in hanoi
 #Next we set a variable who points to the direction of original tower of hanoi
 addi $s1,$zero,0x1001	#First we load $s1 with the high part of the address of orginal array
@@ -71,3 +71,4 @@ addi $sp,$sp,20		#Clean the stack from values taken before and also not used val
 jr $ra			#Jump to $ra saved in stack
 
 exit:
+
