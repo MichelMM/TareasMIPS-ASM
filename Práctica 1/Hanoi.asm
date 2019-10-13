@@ -12,7 +12,7 @@ addi $t0,$zero,1	#Register with value of one to make a comparion in hanoi
 addi $s1,$zero,0x1001	#First we load $s1 with the high part of the address of orginal array
 sll  $s1,$s1,16		#Then Shift the high part 16 bits (4 bytes) to the left so it can get to the right place
 #The original tower of hanoi is empty, so next step is to fill it up with the $s0 quantity of discs
-addi $sp, $sp, 4	#Reserve 4 bytes (1 variable) in the stack
+addi $sp, $sp, -4	#Reserve 4 bytes (1 variable) in the stack
 sw $s0, 0($sp)		#Save in the stack the original value of $s0
 
 Fill:			#Fill original tower array with discs values
